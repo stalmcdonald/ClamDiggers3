@@ -30,13 +30,15 @@
         android:id="@+id/BrowserInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="For Forecast Information Click Here"
+        android:layout_marginTop="20dp"
+        android:text="OLYMPIA - Washington's razor clam season will get off to an early start this year with an evening dig at Twin Harbors beach set for Sept. 19-23. "
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
         android:id="@+id/webButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tidal Information" />
+        android:layout_marginTop="2dp"
+        android:text="How to Dig Razor Clams" />
 
 </LinearLayout>
