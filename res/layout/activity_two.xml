@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#8DAFA1">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tide Prediction"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/cityText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:hint="Enter Seattle or Tacoma City Here"/>
+        <requestFocus />
+
+    <Button
+        android:id="@+id/tideButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Done" />
+    
+    <TextView
+        android:id="@+id/BrowserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="For Forecast Information Click Here"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/webButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tidal Information" />
+
+</LinearLayout>

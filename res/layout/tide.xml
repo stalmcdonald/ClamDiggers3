@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background ="@drawable/bg"
+    tools:context=".MainActivity" >
+    
+   <Button
+        android:id="@+id/cButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:textColor="#252333"
+        android:text="@string/cBttn" />
+
+   <TextView
+       android:id="@+id/note"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="20dp"
+       android:text="@string/intro"
+       android:textColor="#F4821F" />
+
+   <TextView
+       android:id="@+id/textPrediction"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/cButton"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="23dp"
+       android:text="Tide Prediction"
+       android:textAppearance="?android:attr/textAppearanceLarge" />
+
+   <Button
+       android:id="@+id/pButton"
+       style="?android:attr/buttonStyleSmall"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/textPrediction"
+       android:layout_marginTop="41dp"
+       android:text="@string/pBttn"
+       android:textColor="#252333" />
+
+</RelativeLayout>
