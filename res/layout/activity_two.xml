@@ -5,6 +5,43 @@
     android:orientation="vertical" 
     android:background="#8DAFA1">
 	
+	
+	
+	<TextView
+        android:id="@+id/tvWater"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:text="Choose between the following cities: 
+        Seattle, Tacoma or Olympia  " />
+	
+	<TextView 
+	    android:text="City:" 
+	    android:id="@+id/tvCity"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"> 
+	</TextView>
+	
+	<EditText 
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:id="@+id/etCity">
+		<requestFocus></requestFocus>
+	</EditText>
+	
+	<Button 
+	    android:id="@+id/bPredictionLow" 
+	    android:text="Get Coordinates"
+		android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_column="1"
+        android:layout_gravity="center"
+		android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+		android:background="@drawable/brownbutton">
+	</Button>
+	
 	<TextView android:text="Current Tidal Prediction" 
 	    android:id="@+id/bPrediction5"
 		android:textAppearance="?android:attr/textAppearanceLarge"
@@ -43,27 +80,7 @@
 		android:layout_column="1"
 		android:layout_row="4">
 	</TextView>
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tide Prediction"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <EditText
-        android:id="@+id/cityText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10" 
-        android:hint="Enter Seattle or Tacoma City Here"/>
-        <requestFocus />
-
-    <Button
-        android:id="@+id/tideButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Done" />
-    
+   
     <TextView
         android:id="@+id/BrowserInfo"
         android:layout_width="match_parent"
@@ -74,9 +91,14 @@
 
     <Button
         android:id="@+id/webButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_column="1"
+        android:layout_gravity="center"
+		android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:layout_marginTop="2dp"
+		android:background="@drawable/brownbutton"
         android:text="How to Dig Razor Clams" />
 
 </LinearLayout>

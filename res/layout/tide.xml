@@ -41,7 +41,7 @@
 	
 	<Button 
 	    android:id="@+id/bPredictionLow" 
-	    android:text="Get Coordinates"
+	    android:text="Get More Information"
 		android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_column="1"
@@ -94,17 +94,6 @@
 		android:layout_row="4">
 	</TextView>
 	
-	<Button 
-	    android:id="@+id/bPrediction5" 
-	    android:text="Get 5-day Forecast"
-		android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_column="1"
-        android:layout_gravity="center"
-		android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="15dp"
-		android:background="@drawable/brownbutton">
-	</Button>
+	
 
 </LinearLayout>
