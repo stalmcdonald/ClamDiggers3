@@ -1,6 +1,16 @@
+/*
+ * Crystal McDonald
+ * Java II
+ * 1309
+ * Week 3
+ * Intents
+ */
+
 package com.cm.clamdiggers3;
 
+import com.cm.clamdiggers3.TideActivity;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -8,21 +18,27 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
-
-import com.cm.clamdiggers3.R;
+import android.widget.TextView;
 
 public class SecondActivity extends Activity implements OnClickListener {
 	Button goTide;
 	Button browse;
 	EditText cityEntered;
-	
+	//text view will change for tide text
+		 TextView tvCity,bPrediction5, tvWater;
+		 TextView calendar, tidepre, waveheight, tidesite;
+		 EditText etCity;
+		 Context _context;
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.tide);
+		setContentView(R.layout.activity_two);//changed from tide to activity_two
 		cityEntered = (EditText)findViewById(R.id.cityText);
 		goTide = (Button)findViewById(R.id.tideButton);
+		bPrediction5 = (TextView)findViewById(R.id.bPrediction5);
 		
+//		bPrediction5.setText("Parsed JSON data", "On "+date+", date the tide height will be "+tideHeight
+//                +" for a tide type of "+tideType);
 		//set listener for browser button
 		browse = (Button)findViewById(R.id.webButton);
 		
@@ -41,7 +57,7 @@ public class SecondActivity extends Activity implements OnClickListener {
 			
 		}
 	});
-
+		
 	
 
 }

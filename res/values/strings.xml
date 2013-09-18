@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">TideTimer3</string>
+    <string name="app_name">Clam Diggers</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="pBttn">Predict</string>
     <string name="intro">Tidal Prediction Application</string>
-    <string name="cBttn">Enter City </string>
+    <string name="cBttn">Predict </string>
 
 </resources>

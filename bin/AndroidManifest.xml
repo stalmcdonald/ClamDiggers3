@@ -7,7 +7,11 @@
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="17" />
-
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -15,13 +19,29 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.cm.clamdiggers3.TideActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:configChanges="orientation|screenSize">
+            
+            
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name=".SecondActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.TidePrediction" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <service android:name="Service"></service>
+        
     </application>
 
 </manifest>
