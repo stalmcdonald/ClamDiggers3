@@ -128,7 +128,7 @@ public class SecondActivity extends Activity  {
 	        		   tempUrl = new String(baseURL + c + ".json");
 	        		   if (baseURL == null);//changed from tempURL
 	        		   Context context = getApplicationContext();
-    	  				CharSequence notify = "Please Enter City";
+    	  				CharSequence notify = "Enter City";
     	  				int duration = Toast.LENGTH_SHORT;
 
     	  				Toast toast = Toast.makeText(context, notify, duration);
@@ -484,7 +484,7 @@ public class SecondActivity extends Activity  {
      view = view.findViewWithTag(R.id.class);
  }
  
- 
+
  
 
 }//end activity
