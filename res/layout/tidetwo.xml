@@ -31,18 +31,18 @@
 
 	<Button
 	    android:id="@+id/bPrediction"
-	    android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_alignParentLeft="true"
+	    style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 	    android:text="Get Current Tide" />
 	
 	
 	<Button 
 	    android:id="@+id/bPredictionLow" 
-	    android:text="Get Location"
-		android:layout_width="match_parent"
-       	android:layout_height="wrap_content"
-       	android:layout_alignParentLeft="true"
+	    android:text="Get More Information"
+		style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="2dp">
 	</Button>
 
@@ -51,8 +51,6 @@
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:text="Current Tidal Prediction"
-	    android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
         android:layout_marginTop="12dp"
 	    android:textAppearance="?android:attr/textAppearanceLarge" />
 	
